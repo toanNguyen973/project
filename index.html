@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Title-->
+    <nav><span>RESTAURANT MANAGE SYSTEM</span></nav>
+    <div class="container" >
+        <button onclick="document.getElementById('lg').style.display='block'" style="width: auto;">Login</button>
+    </div>
+    <div class="modal" id = "lg">
+    
+        <form action="/pro.php" class="main-content animate" method="post">
+            <div class="closebutton">
+                
+            </div>
+            <div class="container">
+                <span onclick="document.getElementById('lg').style.display='none'" class="close">&times;</span>
+                <br><label class="label">User</label><br><input type="text" placeholder="admin" class="input" required><br>
+                <label class="label">Password</label><br><input type="password" placeholder="123" class="input" required><br>
+                <button type="submit" value="Sign In">Submit</button>
+            </div>
+            
+        </form>
+
+        
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

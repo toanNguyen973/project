@@ -1,0 +1,71 @@
+$violet_color: #6C3A5C
+$dark_brown: #423B0B
+$cambrige_blue: #7BA098
+$slow_dark: #474935
+$sea_green: #028D47
+$sea_green_strong: #013C1F 
+$dark: #171811
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+body
+    background-color: $dark_brown
+nav
+    display: relative
+    position: sticky
+    top: 0px
+    font-size: 3rem
+    background-color: $slow_dark
+    padding: 5px
+    color: #fff
+    border-radius: 30%
+    text-align: center
+input[type=password], input[type=text]
+    width: 100%
+    padding: 12px 20px
+    display: inline-block
+    border: 1px solid #ccc
+    margin: 8px 0
+button 
+    background-color: $sea_green
+    color: white
+    padding: 14px 20px
+    margin: 8px 0
+    border: none
+    cursor: pointer
+    width: 100%
+button:hover
+    background-color: $sea_green_strong
+    transition: ease-in-out 0.2s
+.container
+    padding: 16px
+.modal
+    display: none
+    position: fixed
+    z-index: 1
+    left: 0
+    right: 0
+    width: 100%
+    height: 100%
+    overflow: auto
+    background-color: $dark_brown
+    padding-top: 60px
+
+.main-content
+    background-color: #fff
+    margin: 5% auto 5% auto
+    border: 1px solid #888
+    width: 80%
+.close
+    left: 25px
+    margin-bottom: 10px
+    top: 0
+    color: #000
+    font-size: 3rem
+    cursor: pointer
+    font-weight: 500
+.close:hover, .close:focus
+    color: red
+    cursor: pointer
+
